@@ -37,6 +37,44 @@ public class MarshmallowMonster
 		
 	}
 	
+
+	
+	public MarshmallowMonster(String name,
+								int earCount,
+								int eyeCount,
+								boolean hasTorso,
+								double armCount,
+								int legCount,
+								int footCount,
+								int tailCount,
+								boolean isCute,
+								boolean hasTastiness
+								
+								
+								)
+	{
+	this.name = name;
+	this.legCount = legCount;
+	this.eyeCount = eyeCount;
+	this.hasTorso = hasTorso;
+	this.earCount = earCount;
+	this.tailCount = tailCount;
+	this.footCount = footCount;
+	this.isCute = isCute;
+	this.hasTastiness = hasTastiness;
+	this.tastiness = tastiness;
+	this.hasEyeSocket = hasEyeSocket;
+	this.armCount = armCount;
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+	
 	
 	public String getName()
 	{
@@ -94,6 +132,15 @@ public class MarshmallowMonster
 			
 			return description;
 		}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
