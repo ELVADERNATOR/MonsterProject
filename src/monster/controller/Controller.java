@@ -64,6 +64,7 @@ public class Controller
 		int customEyes = input.nextInt();
 		input.nextLine();
 		
+		
 		defaultMonster.setEyeCount(customEyes);
 		System.out.println(customName + " Now has "  + defaultMonster.getEyeCount() + " eyes!!");
 		
@@ -75,7 +76,7 @@ public class Controller
 		input.nextLine();
 		defaultMonster.setArmCount(customArms);
 		
-		System.out.println(customName + " Now has " + customArms + " arms!!");
+		System.out.println(customName + " Now has " + defaultMonster.getArmCount() + " arms!!");
 		
 		
 		System.out.println("");
@@ -132,7 +133,7 @@ public class Controller
 		defaultMonster.setHasTastiness(hasTastiness);
 		
 		System.out.println( "Just in a unanimous vote was submitted on whether or not " +  customName + " is tasty, (drum role please!!!) The answer is!! " + hasTastiness + "!!!!");
-		
+		System.out.println("");
 		System.out.println("We need to set how tasty the mosnter is on a scale of 1 to 1000, if you want use a decimal to be precise!!");
 	
 		System.out.println("");
@@ -144,6 +145,7 @@ public class Controller
 		
 		System.out.println("");
 		
+		System.out.println("Your monsters name is"+ customName + "and it has " + customEyes + "Eyes");
 		
 	}
 	
