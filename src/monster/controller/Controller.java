@@ -114,14 +114,6 @@ public class Controller
 		
 		System.out.println(customName + " Now has " + customFeet + pluralFeet);
 		
-		System.out.println("");
-		System.out.println("We need to set how tasty the mosnter is on a scale of 1 to 1000, if you want use a decimal to be precise!!");
-	
-		double customTastiness = input.nextDouble();
-		input.nextLine();
-		defaultMonster.setTastiness(customTastiness);
-		
-		System.out.println(customName + " now has a " + ((customTastiness / 1000) * 100  + " %") + " Tastiness approval rating!!!");
 		
 		System.out.println("");
 		
@@ -139,7 +131,20 @@ public class Controller
 		
 		defaultMonster.setHasTastiness(hasTastiness);
 		
-		System.out.println( " with a unanimous on whether or not " +  customName + " is tasty, is (drum role please!!!)  " + hasTastiness + "!!!!");
+		System.out.println( "Just in a unanimous vote was submitted on whether or not " +  customName + " is tasty, (drum role please!!!) The answer is!! " + hasTastiness + "!!!!");
+		
+		System.out.println("We need to set how tasty the mosnter is on a scale of 1 to 1000, if you want use a decimal to be precise!!");
+	
+		System.out.println("");
+		double customTastiness = input.nextDouble();
+		input.nextLine();
+		defaultMonster.setTastiness(customTastiness);
+		
+		System.out.println(customName + " now has a " + ((customTastiness / 1000) * 100  + " %") + " Tastiness approval rating!!!");
+		
+		System.out.println("");
+		
+		
 	}
 	
 	
