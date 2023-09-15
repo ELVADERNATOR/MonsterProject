@@ -53,6 +53,7 @@ public class Controller
 	}
 	private void useSettersWithScanner()
 	{
+		System.out.println("");
 		System.out.println("That name is very boring, we need to change it! So what should the name be?");
 		String customName = input.nextLine();
 		defaultMonster.setName(customName);
@@ -61,7 +62,7 @@ public class Controller
 		
 		System.out.println("Now we need to add eyes!");
 		int customEyes = input.nextInt();
-		
+		input.nextLine();
 		
 		defaultMonster.setEyeCount(customEyes);
 		System.out.println(customName + " Now has "  + defaultMonster.getEyeCount() + " eyes!!");
@@ -71,6 +72,7 @@ public class Controller
 		System.out.println("How many arms does your monster have?");
 		
 		int customArms = input.nextInt();
+		input.nextLine();
 		defaultMonster.setArmCount(customArms);
 		
 		System.out.println(customName + " Now has " + customArms + " arms!!");
@@ -81,6 +83,7 @@ public class Controller
 		System.out.println("How many tails does your monster have?");
 		
 		int customTails = input.nextInt();
+		input.nextLine();
 		defaultMonster.setTailCount(customTails);
 		String pluralTails = "";
 		if (customTails > 1)
@@ -98,6 +101,7 @@ public class Controller
 		
 		String pluralFeet = "";
 		int customFeet = input.nextInt();
+		input.nextLine();
 		defaultMonster.setFootCount(customFeet);
 		
 		if(customFeet > 1)
@@ -114,6 +118,7 @@ public class Controller
 		System.out.println("We need to set how tasty the mosnter is on a scale of 1 to 1000, if you want use a decimal to be precise!!");
 	
 		double customTastiness = input.nextDouble();
+		input.nextLine();
 		defaultMonster.setTastiness(customTastiness);
 		
 		System.out.println(customName + " now has a " + ((customTastiness / 1000) * 100  + " %") + " Tastiness approval rating!!!");
