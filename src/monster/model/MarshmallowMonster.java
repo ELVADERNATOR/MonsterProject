@@ -49,9 +49,7 @@ public class MarshmallowMonster
 								int tailCount,
 								boolean isCute,
 								boolean hasTastiness
-								
-								
-								)
+							  )
 	{
 	this.name = name;
 	this.legCount = legCount;
@@ -75,6 +73,16 @@ public class MarshmallowMonster
 	
 	
 	
+	public boolean getHasEyeSocket()
+	{
+		return this.hasEyeSocket;
+	}
+	
+	
+	public double getArmCount()
+	{
+		return this.armCount;
+	}
 	
 	public String getName()
 	{
@@ -134,10 +142,39 @@ public class MarshmallowMonster
 		}
 	
 	
-	
-	
-	
-	
+public void setName(String name)
+{
+	this.name = name;
+}
+public void setLegCount(int legCount)
+{
+	this.legCount = legCount;
+}
+public void setArmCount(int armCount)
+{
+	this.armCount = armCount;
+}
+public void setEyeCount(int eyeCount)
+{
+	this.eyeCount = eyeCount;
+}
+public void setTailCount(int tailCount)
+{
+	this.tailCount = tailCount;
+}
+public void setTastiness(double tastiness)
+{	
+this.tastiness = tastiness;
+}
+
+public void setFootCount (int footCount)
+{
+	this.footCount = footCount;
+}
+public void setHasTastiness(boolean hasTastiness)
+{
+	this.hasTastiness = hasTastiness;
+}
 	
 	
 	
