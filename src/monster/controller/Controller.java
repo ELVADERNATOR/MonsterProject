@@ -29,17 +29,19 @@ public class Controller
 	
 	public void start()
 		{
-			System.out.println("I made a monster - Dr.FrankenMaximus_Prime");
-		//	System.out.println(defaultMonster);
-			
-			
-			double armCount = myMonster.getArmCount();
-			String name = myMonster.getName();
-			System.out.println(myMonster);
-			System.out.println("My monsters name was " + name);
-			useSetters();
+//			System.out.println("I made a monster - Dr.FrankenMaximus_Prime");
+//		//	System.out.println(defaultMonster);
+//			
+//			
+//			double armCount = myMonster.getArmCount();
+//			String name = myMonster.getName();
+//			System.out.println(myMonster);
+//			System.out.println("My monsters name was " + name);
+			//useSetters();
 			//useSettersWithScanner();
-			useConditionals();
+			//monsterUseConditionals();
+			useWhileLoops();
+			//useConditionals();
 			input.close();
 		}
 	
@@ -159,9 +161,124 @@ public class Controller
 		
 	}
 	
-	
+	private void monsterUseConditionals()
+	{
+		boolean check1 = false;
+		boolean check2 = false;
+		boolean check3 = false;
+		boolean check4 = false;
+		boolean check5 = false;
+		boolean successCheck = false;
+		String monsterEyeAward = "Congrats, your craftsmanship has earned you the 'Im always Watching' Award!!!";
+		String monsterArmAward = "Congrats, your craftsmanship has earned you the 'Beyblade' Award!!!";
+		String monsterTailAward = "Congrats, your craftsmanship has earned you the 'Iron Tail' Award!!!";
+		String monsterTastinessAward= "Congrats, your craftsmanship has earned you the 'Better than Gordon Ramseys' Award!!!"; 
+		String monsterFootAward = "Congrats, your craftsmanship has earned you the 'Athletes Foot?'  Award!!!";
+		String allAroundMonsterAward = "Congrats, you have unlocked the ultimate 'Monster Maker' Award!!!";
+		
+		if (defaultMonster.getEyeCount() > 25 && defaultMonster.getEyeCount() < 40)
+		{
+			System.out.println("");
+			System.out.println(monsterEyeAward);
+			check1 = true;
+		}  else
+		{
+			check1 = false;
+		}
+		
+		if (defaultMonster.getArmCount() > 10 && defaultMonster.getArmCount() < 20)
+		{
+			System.out.println("");
+
+			System.out.println(monsterArmAward);
+			check2 = true;
+		} else
+		{
+			check2 = false;
+		}
+		
+		
+		if (defaultMonster.getTailCount() > 30 && defaultMonster.getTailCount() < 40)
+		{
+			System.out.println("");
+
+			System.out.println(monsterTailAward);
+			check3 = true;
+		}else
+		{
+			check3 = false;
+		}
+		if (defaultMonster.getTastiness() > 800 && defaultMonster.getTastiness() < 900)
+		{
+			System.out.println("");
+
+			System.out.println(monsterTastinessAward);
+			check4 = true;
+		}else
+		{
+			check4 = false;
+		}
+		
+		if (defaultMonster.getFootCount() > 20)
+		{
+			System.out.println("");
+
+			System.out.println(monsterFootAward);
+			check5 = true;
+		}
+		
+		if (check1 == true && check2 == true && check3 == true && check4 == true && check5 == true )
+		{
+			System.out.println("");
+			
+			
+			System.out.println(allAroundMonsterAward);
+			successCheck = true;
+		}
+		
+		while (successCheck == true)
+		{
+			int count = 1;
+		
+				while (successCheck == true)
+				{
+					System.out.println("BEST MONSTER MAKER");
+					count++;
+				}
+				
+			if (count == 1000)
+			{
+				
+				System.out.println("You should have given us more air capacity -_-" );
+			}
+		}
+		
+		
+		
+		
+	}
 	private void useConditionals()
 	{
+		System.out.println("Welcome to Revenge of the Tasties");
+		String yourName = "";
+		System.out.println("Whats your name");
+		yourName = input.nextLine();
+		System.out.print("\n\n\n");
+		System.out.println("Type yes or no.");
+		String didItTasteGood = "";
+		didItTasteGood = input.nextLine();
+		didItTasteGood.toLowerCase();
+		
+		boolean isItGood = false;
+		if (didItTasteGood.equals("yes"))
+		{
+			isItGood = true;
+		}else
+		{
+			isItGood = false;
+		}
+		
+		defaultMonster.setHasTastiness(isItGood);
 		boolean isTasty = defaultMonster.getHasTastiness();
 		
 		if (isTasty)
@@ -176,11 +293,60 @@ public class Controller
 		
 		if (isTasty)
 		{
-			System.out.println("Yes");
+			System.out.println("Its been confirmed");
 		}else 
 		{
-			System.out.println("no");
+			System.out.println("Liar! You were my brother " + yourName + ", your were supposed to bring balance to the monsers, not leave them tastinessless!");
+		}
+		
+		if (defaultMonster.getLegCount() > 100)
+		{
+			System.out.println("That is a serious amount of legs");
+		} else if (defaultMonster.getLegCount() > 40)
+		{
+			System.out.println("Man do you have an easy time walking with those???");
+		}else if (defaultMonster.getLegCount() > 5)
+		{
+			System.out.println("Alright, alright, you got some legs.");
+		}
+		else 
+		{
+			System.out.println("There are this many legs: " + defaultMonster.getLegCount());
 		}
 	}
 	
+	private void useWhileLoops()
+	{
+		int legs = 0;
+		System.out.println("Pick a number over 100");
+		legs = input.nextInt();
+		defaultMonster.setLegCount(legs);
+		boolean isFinished = false;
+		int count = 1;
+		//System.out.println("Keep on goin!!");
+//		while (!isFinished)
+//		{
+//			
+//			
+//			for (count = 1;;count++)
+//			{
+//				this.count = count;
+//				System.out.println(count);
+//				if (count >= 1000)
+//				{
+//					isFinished = false;
+//				}
+//				
+//				
+//			}
+////			System.out.println(count);
+//				
+//		
+//		}
+		while (defaultMonster.getLegCount() > 0)
+		{
+			System.out.println("Legs are: " + defaultMonster.getLegCount());
+			defaultMonster.setLegCount(defaultMonster.getLegCount() - 4);
+		}
+	}
 }
