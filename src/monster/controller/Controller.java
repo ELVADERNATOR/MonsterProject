@@ -38,8 +38,8 @@ public class Controller
 			System.out.println(myMonster);
 			System.out.println("My monsters name was " + name);
 			useSetters();
-			useSettersWithScanner();
-			
+			//useSettersWithScanner();
+			useConditionals();
 			input.close();
 		}
 	
@@ -66,7 +66,7 @@ public class Controller
 		
 		
 		defaultMonster.setEyeCount(customEyes);
-		System.out.println(customName + " Now has "  + defaultMonster.getEyeCount() + " eyes!!");
+		System.out.println(defaultMonster.getName() + " Now has "  + defaultMonster.getEyeCount() + " eyes!!");
 		
 		System.out.println("");	
 		
@@ -76,7 +76,7 @@ public class Controller
 		input.nextLine();
 		defaultMonster.setArmCount(customArms);
 		
-		System.out.println(customName + " Now has " + defaultMonster.getArmCount() + " arms!!");
+		System.out.println(defaultMonster.getName() + " Now has " + defaultMonster.getArmCount() + " arms!!");
 		
 		
 		System.out.println("");
@@ -94,7 +94,7 @@ public class Controller
 		{
 			 pluralTails =  " tail!!";
 		}
-		System.out.println(customName + " Now has " + customTails + pluralTails);
+		System.out.println(defaultMonster.getName() + " Now has " + defaultMonster.getTailCount() + pluralTails);
 		
 		System.out.println("");
 		
@@ -113,7 +113,7 @@ public class Controller
 			pluralFeet = " foot!!!";
 		}
 		
-		System.out.println(customName + " Now has " + customFeet + pluralFeet);
+		System.out.println(defaultMonster.getName() + " Now has " + defaultMonster.getFootCount() + pluralFeet);
 		
 		
 		System.out.println("");
@@ -132,7 +132,7 @@ public class Controller
 		
 		defaultMonster.setHasTastiness(hasTastiness);
 		
-		System.out.println( "Just in a unanimous vote was submitted on whether or not " +  customName + " is tasty, (drum role please!!!) The answer is!! " + hasTastiness + "!!!!");
+		System.out.println( "Just in a unanimous vote was submitted on whether or not " +  defaultMonster.getName() + " is tasty, (drum role please!!!) The answer is!! " + defaultMonster.getHasTastiness() + "!!!!");
 		System.out.println("");
 		System.out.println("We need to set how tasty the mosnter is on a scale of 1 to 1000, if you want use a decimal to be precise!!");
 	
@@ -141,13 +141,46 @@ public class Controller
 		input.nextLine();
 		defaultMonster.setTastiness(customTastiness);
 		
-		System.out.println(customName + " now has a " + ((customTastiness / 1000) * 100  + " %") + " Tastiness approval rating!!!");
+		System.out.println(defaultMonster.getName() + " now has a " + ((defaultMonster.getTastiness() / 1000) * 100  + " %") + " Tastiness approval rating!!!");
 		
 		System.out.println("");
+		String isNot = "";
+		if (hasTastiness == true)
+				{
+			isNot = " is ";
+			
+				} else
+				{
+					isNot = " is not ";
+					
+				}
 		
-		System.out.println("Your monsters name is"+ customName + "and it has " + customEyes + "Eyes");
+		System.out.println("Your monsters name is "+ defaultMonster.getName() + " and it has " + defaultMonster.getEyeCount() + " Eyes! It also has " + defaultMonster.getArmCount() + " arms, " + defaultMonster.getName() + isNot + "tasty! " + defaultMonster.getName()+" has " +defaultMonster.getTailCount() + pluralTails + " " +defaultMonster.getName()+ " Has " + defaultMonster.getFootCount() + pluralFeet + " " + defaultMonster.getName() + " also has a tastiness approval rating of: " + defaultMonster.getTastiness() + " Thats your monster!");
 		
 	}
 	
+	
+	private void useConditionals()
+	{
+		boolean isTasty = defaultMonster.getHasTastiness();
+		
+		if (isTasty)
+		{
+			System.out.println("This monster is giving signs of tastiness");
+		}
+		
+		if (!isTasty)
+		{
+			System.out.println("There is no sign of a tasty monster here");
+		}
+		
+		if (isTasty)
+		{
+			System.out.println("Yes");
+		}else 
+		{
+			System.out.println("no");
+		}
+	}
 	
 }

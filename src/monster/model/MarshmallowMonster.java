@@ -31,7 +31,7 @@ public class MarshmallowMonster
 		this.tailCount = 0;
 		this.legCount = 2;
 		this.isCute = false;
-		this.hasTastiness = true;
+		this.hasTastiness = false;
 		this.tastiness = Double.POSITIVE_INFINITY;
 		this.footCount = 5;
 		
