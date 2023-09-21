@@ -37,11 +37,12 @@ public class Controller
 //			String name = myMonster.getName();
 //			System.out.println(myMonster);
 //			System.out.println("My monsters name was " + name);
-			//useSetters();
-			//useSettersWithScanner();
-			//monsterUseConditionals();
-			useWhileLoops();
-			//useConditionals();
+			useSetters();
+			useSettersWithScanner();
+			monsterUseConditionals();
+			//useWhileLoops();
+			useConditionals();
+			useForLoops();
 			input.close();
 		}
 	
@@ -322,17 +323,17 @@ public class Controller
 		legs = input.nextInt();
 		defaultMonster.setLegCount(legs);
 		boolean isFinished = false;
-		int count = 1;
-		//System.out.println("Keep on goin!!");
+		
+		System.out.println("Keep on goin!!");
 //		while (!isFinished)
 //		{
 //			
 //			
-//			for (count = 1;;count++)
+//			for (int count1 > 0;;count1++)
 //			{
-//				this.count = count;
-//				System.out.println(count);
-//				if (count >= 1000)
+//				
+//				System.out.println(count1);
+//				if (count1 >= 1000)
 //				{
 //					isFinished = false;
 //				}
@@ -340,13 +341,32 @@ public class Controller
 //				
 //			}
 ////			System.out.println(count);
-//				
-//		
-//		}
+				
+		
+		//}
 		while (defaultMonster.getLegCount() > 0)
 		{
 			System.out.println("Legs are: " + defaultMonster.getLegCount());
 			defaultMonster.setLegCount(defaultMonster.getLegCount() - 4);
 		}
 	}
+	
+	private void useForLoops()
+	{
+		String name = myMonster.getName();
+		for (int index = 0; index < name.length(); index++)
+		{
+			String letter = name.substring(index, index + 1);
+			System.out.println(letter);
+		}
+		
+		
+		name = defaultMonster.getName();
+		for (int index = 0; index < name.length(); index++)
+		{
+			String letter = name.substring(index, index + 1);
+			System.out.println(letter);
+		}
+	}
 }
+
