@@ -409,6 +409,49 @@ public class Controller
 //		
 //		}
 		
+		for (int hours1 = 0; hours1 < 24; hours1++)
+		{
+			for (int minutes1 = 0; minutes1 < 60; minutes1++)
+			{
+				for (int seconds1 = 0; seconds1 < 60; seconds1++)
+				{
+					System.out.println("H: " + hours1 + " m: " + minutes1 + " S: " + seconds1);
+				}
+			}
+		}
+		
+		
+		for (int hours = 0; hours < 24;hours++)
+		{
+			
+			for (int minutes = 0; minutes < 60; minutes++)
+			{
+				
+				
+				for (int seconds = 0; seconds < 60; seconds++)
+				{
+					try {
+						Thread.sleep(1);
+						
+						System.out.println(hours + " hours " + minutes + " minutes " + seconds + " seconds ");
+					}
+					catch (InterruptedException e)
+					{
+						System.out.println("There was an error" + e.getMessage());
+					}
+					
+				}
+				
+				
+				
+			}
+			
+			
+			
+		}
+		
+		
+		
 		
 		
 		for (int lives = 1; lives >= 1; lives--)
@@ -428,7 +471,7 @@ public class Controller
 			health += recover;
 		
 			}
-			 
+		
 			
 			
 			
