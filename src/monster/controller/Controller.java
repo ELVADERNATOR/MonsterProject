@@ -37,12 +37,13 @@ public class Controller
 //			String name = myMonster.getName();
 //			System.out.println(myMonster);
 //			System.out.println("My monsters name was " + name);
-			useSetters();
-			useSettersWithScanner();
-			monsterUseConditionals();
+			//useSetters();
+			//useSettersWithScanner();
+			//monsterUseConditionals();
 			//useWhileLoops();
-			useConditionals();
-			useForLoops();
+			//useConditionals();
+			//useForLoops();
+			useNestedLoops();
 			input.close();
 		}
 	
@@ -325,25 +326,27 @@ public class Controller
 		boolean isFinished = false;
 		
 		System.out.println("Keep on goin!!");
-//		while (!isFinished)
-//		{
-//			
-//			
-//			for (int count1 > 0;;count1++)
-//			{
-//				
-//				System.out.println(count1);
-//				if (count1 >= 1000)
-//				{
-//					isFinished = false;
-//				}
-//				
-//				
-//			}
-////			System.out.println(count);
+
+		
+		
+				while (!isFinished)
+		{
+			
+			
+			for (int count = 1; count > 0;count++)
+			{
+				if (count >= 1000)
+				{
+					isFinished = true;
+				}
+				System.out.println(count);
+				
+				
+			}
+//			System.out.println(count);
 				
 		
-		//}
+		}
 		while (defaultMonster.getLegCount() > 0)
 		{
 			System.out.println("Legs are: " + defaultMonster.getLegCount());
@@ -359,7 +362,7 @@ public class Controller
 			String letter = name.substring(index, index + 1);
 			System.out.println(letter);
 		}
-		
+		System.out.println("");
 		
 		name = defaultMonster.getName();
 		for (int index = 0; index < name.length(); index++)
@@ -367,6 +370,71 @@ public class Controller
 			String letter = name.substring(index, index + 1);
 			System.out.println(letter);
 		}
+	
+		
+		for (int index = 0; index < 10; index++)
+		{
+			MarshmallowMonster demo = new MarshmallowMonster();
+			System.out.println(demo.getName());
+			
+//			for (int count = 0; count <= 1000;count++)
+//			{
+//				try {
+//					Thread.sleep(250);
+//			
+//				
+//				
+//				System.out.println(count);
+//				System.out.println("Your awesome!");
+//				   }
+//				catch(InterruptedException e) 
+//				{
+//					System.out.println("There was an error" + e.getMessage());
+//				}
+//			}
+		}
 	}
+
+
+	private void useNestedLoops()
+	{
+//		for (int index = 0; index < 10; index++)
+//		{
+//			System.out.println("This is the outer loop");
+//			for (int inner = 0; inner  < 20; inner++)
+//			{
+//				System.out.println("The inner loop is at: " + inner + " and index is: " + index);
+//			}
+//			System.out.println("Outer loop completes number: " + index);
+//		
+//		}
+		
+		
+		
+		for (int lives = 1; lives >= 1; lives--)
+		{
+			
+			int damage = 0;
+			int recover = 0;
+			
+			for (int health = 100; health > 1;)
+			{
+			System.out.println("Your health is at: " + health);
+			System.out.println("Pick a number 20 through 30");
+			damage = input.nextInt();
+			health -= damage;
+			System.out.println("pick a number 1 throught 10");
+			recover = input.nextInt();
+			health += recover;
+		
+			}
+			 
+			
+			
+			
+		}
+		
+	}
+	
 }
 
