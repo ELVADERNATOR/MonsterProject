@@ -8,7 +8,7 @@
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": 1
+      "points": null
     },
     {
       "name": "Controller Constructor",
@@ -18,7 +18,7 @@
       "output": "",
       "comparison": "exact",
       "timeout": 10,
-      "points": 1
+      "points": null
     },
     {
       "name": "Controller Methods",
@@ -28,7 +28,7 @@
       "output": "",
       "comparison": "exact",
       "timeout": 10,
-      "points": 5
+      "points": null
     },
     {
       "name": "Controller Data Members",
@@ -38,7 +38,7 @@
       "output": "",
       "comparison": "exact",
       "timeout": 10,
-      "points": 3
+      "points": null
     },
     {
       "name": "MarshmallowMonster toString",
@@ -48,7 +48,7 @@
       "output": "",
       "comparison": "exact",
       "timeout": 10,
-      "points": 3
+      "points": null
     },
     {
       "name": "MarshmallowMonster Constructors",
@@ -58,7 +58,7 @@
       "output": "",
       "comparison": "exact",
       "timeout": 10,
-      "points": 5
+      "points": null
     },
     {
       "name": "MarshmallowMonster Getters",
@@ -68,7 +68,7 @@
       "output": "",
       "comparison": "exact",
       "timeout": 10,
-      "points": 1
+      "points": null
     },
     {
       "name": "MarshmallowMonster Setters",
@@ -78,7 +78,7 @@
       "output": "",
       "comparison": "exact",
       "timeout": 10,
-      "points": 1
+      "points": null
     },
     {
       "name": "MarshmallowMonster Data Members",
@@ -88,7 +88,7 @@
       "output": "",
       "comparison": "exact",
       "timeout": 10,
-      "points": 15
+      "points": null
     }
   ]
 }
