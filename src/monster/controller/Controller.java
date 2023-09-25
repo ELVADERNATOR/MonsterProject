@@ -377,21 +377,21 @@ public class Controller
 			MarshmallowMonster demo = new MarshmallowMonster();
 			System.out.println(demo.getName());
 			
-//			for (int count = 0; count <= 1000;count++)
-//			{
-//				try {
-//					Thread.sleep(250);
-//			
-//				
-//				
-//				System.out.println(count);
-//				System.out.println("Your awesome!");
-//				   }
-//				catch(InterruptedException e) 
-//				{
-//					System.out.println("There was an error" + e.getMessage());
-//				}
-//			}
+			for (int count = 0; count <= 1000;count++)
+			{
+				try {
+					Thread.sleep(250);
+			
+				
+				
+				System.out.println(count);
+				System.out.println("Your awesome!");
+				   }
+				catch(InterruptedException e) 
+				{
+					System.out.println("There was an error" + e.getMessage());
+				}
+			}
 		}
 	}
 
