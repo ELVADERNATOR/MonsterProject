@@ -29,20 +29,20 @@ public class Controller
 	
 	public void start()
 		{
-//			System.out.println("I made a monster - Dr.FrankenMaximus_Prime");
-//		//	System.out.println(defaultMonster);
-//			
-//			
-//			double armCount = myMonster.getArmCount();
-//			String name = myMonster.getName();
-//			System.out.println(myMonster);
-//			System.out.println("My monsters name was " + name);
-			//useSetters();
-			//useSettersWithScanner();
-			//monsterUseConditionals();
-			//useWhileLoops();
-			//useConditionals();
-			//useForLoops();
+			System.out.println("I made a monster - Dr.FrankenMaximus_Prime");		
+			System.out.println(defaultMonster);
+		
+		
+		double armCount = myMonster.getArmCount();
+		String name = myMonster.getName();
+			System.out.println(myMonster);
+			System.out.println("My monsters name was " + name);
+			useSetters();
+			useSettersWithScanner();
+			monsterUseConditionals();
+			useWhileLoops();
+			useConditionals();
+			useForLoops();
 			useNestedLoops();
 			input.close();
 		}
@@ -398,16 +398,16 @@ public class Controller
 
 	private void useNestedLoops()
 	{
-//		for (int index = 0; index < 10; index++)
-//		{
-//			System.out.println("This is the outer loop");
-//			for (int inner = 0; inner  < 20; inner++)
-//			{
-//				System.out.println("The inner loop is at: " + inner + " and index is: " + index);
-//			}
-//			System.out.println("Outer loop completes number: " + index);
-//		
-//		}
+		for (int index = 0; index < 10; index++)
+		{
+			System.out.println("This is the outer loop");
+			for (int inner = 0; inner  < 20; inner++)
+			{
+				System.out.println("The inner loop is at: " + inner + " and index is: " + index);
+			}
+			System.out.println("Outer loop completes number: " + index);
+		
+		}
 		
 		for (int hours1 = 0; hours1 < 24; hours1++)
 		{
