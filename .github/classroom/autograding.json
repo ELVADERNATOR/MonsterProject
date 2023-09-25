@@ -1,0 +1,94 @@
+{
+  "tests": [
+    {
+      "name": "Runner test",
+      "setup": "",
+      "run": "gradle test --tests RunnerTest.testMain",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Controller Constructor",
+      "setup": "",
+      "run": "gradle test --tests ControllerTest.testConstructor",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Controller Methods",
+      "setup": "",
+      "run": "gradle test --tests ControllerTest.testMethods",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Controller Data Members",
+      "setup": "",
+      "run": "gradle test --tests ControllerTest.testDataMembers",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "MarshmallowMonster toString",
+      "setup": "",
+      "run": "gradle test --tests MarshmallowMonsterTest.testToString",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "MarshmallowMonster Constructors",
+      "setup": "",
+      "run": "gradle test --tests MarshmallowMonsterTest.testConstructors",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "MarshmallowMonster Getters",
+      "setup": "",
+      "run": "gradle test --tests MarshmallowMonsterTest.testGetters",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "MarshmallowMonster Setters",
+      "setup": "",
+      "run": "gradle test --tests MarshmallowMonsterTest.testSetters",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "MarshmallowMonster Data Members",
+      "setup": "",
+      "run": "gradle test --tests MarshmallowMonsterTest.testDataMembers",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
