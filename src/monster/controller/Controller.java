@@ -323,7 +323,7 @@ public class Controller
 		System.out.println("Pick a number over 100");
 		legs = input.nextInt();
 		defaultMonster.setLegCount(legs);
-		boolean isFinished = false;
+		boolean isFinished = true;
 		
 		System.out.println("Keep on goin!!");
 
@@ -331,22 +331,13 @@ public class Controller
 		
 				while (!isFinished)
 		{
-			
-			
-			for (int count = 1; count > 0;count++)
-			{
-				if (count >= 1000)
-				{
-					isFinished = true;
-				}
-				System.out.println(count);
-				
+			System.out.println("hi");
+			isFinished = true;
 				
 			}
-//			System.out.println(count);
 				
 		
-		}
+		
 		while (defaultMonster.getLegCount() > 0)
 		{
 			System.out.println("Legs are: " + defaultMonster.getLegCount());
@@ -377,7 +368,7 @@ public class Controller
 			MarshmallowMonster demo = new MarshmallowMonster();
 			System.out.println(demo.getName());
 			
-			for (int count = 0; count <= 1000;count++)
+			for (int count = 0; count <= 10;count++)
 			{
 				try {
 					Thread.sleep(250);
