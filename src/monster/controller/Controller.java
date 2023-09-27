@@ -1,5 +1,7 @@
 package monster.controller;
 import monster.model.MarshmallowMonster;
+
+import java.util.ArrayList;
 import java.util.Scanner;
 public class Controller
 {
@@ -37,15 +39,48 @@ public class Controller
 		String name = myMonster.getName();
 			System.out.println(myMonster);
 			System.out.println("My monsters name was " + name);
-			useSetters();
-			useSettersWithScanner();
-			monsterUseConditionals();
-			useWhileLoops();
-			useConditionals();
-			useForLoops();
-			useNestedLoops();
+			
+			
+			
+			useArrayList();
+			
+//			useSetters();
+//			useSettersWithScanner();
+//			monsterUseConditionals();
+//			useWhileLoops();
+//			useConditionals();
+//			useForLoops();
+//			useNestedLoops();
 			input.close();
 		}
+	
+	
+	private void useArrayList()
+	{
+		ArrayList<MarshmallowMonster> firstList = new ArrayList<MarshmallowMonster>();
+		
+		for (int index = 0; index < 10; index++)
+		{
+			MarshmallowMonster demo = new MarshmallowMonster();
+			firstList.add(demo);
+		}
+		
+		for (int index = 0; index <  10; index++)
+		{
+			MarshmallowMonster current = firstList.get(index);
+			
+			String currentName = "";
+			System.out.println("What is the name of Monster: " + (index + 1)); // keeps the original index value, however adds one so it looks like we start at 1 rather than 0. indecies left unchanged
+			currentName = input.nextLine();
+			current.setName(currentName);
+			System.out.println("The monster at " + (index + 1) + " has a name of: " + current.getName());
+		}
+		
+		
+	}
+	
+	
+		
 	
 	private void useSetters()
 	{
