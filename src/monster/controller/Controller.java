@@ -58,6 +58,7 @@ public class Controller
 	private void useArrayList()
 	{
 		ArrayList<MarshmallowMonster> firstList = new ArrayList<MarshmallowMonster>();
+		ArrayList<MarshmallowMonster> secondList = new ArrayList<MarshmallowMonster>();
 		
 		for (int index = 0; index < 10; index++)
 		{
@@ -70,12 +71,68 @@ public class Controller
 			MarshmallowMonster current = firstList.get(index);
 			
 			String currentName = "";
+			double tastiness = 0.0;
 			System.out.println("What is the name of Monster: " + (index + 1)); // keeps the original index value, however adds one so it looks like we start at 1 rather than 0. indecies left unchanged
 			currentName = input.nextLine();
 			current.setName(currentName);
+			input.nextDouble();
+			System.out.println("What was the tastiness the of Monster at: " + (index + 1));
+			System.out.println("The range was 0 - 1000");
+			defaultMonster.setTastiness(tastiness);
 			System.out.println("The monster at " + (index + 1) + " has a name of: " + current.getName());
+			
+
+			}
+		for (int index = 0; index < 10; index++)
+		{
+			MarshmallowMonster demo = new MarshmallowMonster();
+			secondList.add(demo);
 		}
 		
+		for (int index = 0; index <  10; index++)
+		{
+			MarshmallowMonster current = secondList.get(index);
+			String name = "";
+			boolean isItTasty = defaultMonster.getHasTastiness();
+			String tasty1= "";
+			double tastiness = 0.0;
+			System.out.println("What is the name of Monster: " + (index + 1)); // keeps the original index value, however adds one so it looks like we start at 1 rather than 0. indecies left unchanged
+			
+			name = input.nextLine();
+			System.out.println("What was the tastiness the of Monster at: " + (index + 1));
+			System.out.println("Was it tasty? Yes or No");
+			tasty1.toLowerCase();
+			tasty1 = input.nextLine();
+			
+			if (tasty1.equals ("yes"))
+			{
+				isItTasty = true;
+				defaultMonster.setHasTastiness(isItTasty);
+			} else
+			{
+				isItTasty = false;
+				defaultMonster.setHasTastiness(isItTasty);
+			}
+			
+			current.getHasTastiness();
+			System.out.println("What was the tastiness factor?");
+						System.out.println("The range was 0 - 1000");
+
+						input.nextDouble();
+			
+			defaultMonster.setTastiness(tastiness);
+			String was = "";
+			if (isItTasty = true)
+			{
+				was = " tasty ";
+			}else
+			{
+				was = " not tasty ";
+			}
+			System.out.println("The monster at " + (index + 1) + " has a name of: " + current.getName() + "It was");
+			
+
+			}
 		
 	}
 	
