@@ -31,26 +31,19 @@ public class Controller
 	
 	public void start()
 		{
-			System.out.println("I made a monster - Dr.FrankenMaximus_Prime");		
-			System.out.println(defaultMonster);
 		
-		
-		double armCount = myMonster.getArmCount();
-		String name = myMonster.getName();
-			System.out.println(myMonster);
-			System.out.println("My monsters name was " + name);
 			
 			
 			
 			useArrayList();
 			
-//			useSetters();
-//			useSettersWithScanner();
-//			monsterUseConditionals();
-//			useWhileLoops();
-//			useConditionals();
-//			useForLoops();
-//			useNestedLoops();
+			useSetters();
+			useSettersWithScanner();
+			monsterUseConditionals();
+			useWhileLoops();
+			useConditionals();
+			useForLoops();
+			useNestedLoops();
 			input.close();
 		}
 	
